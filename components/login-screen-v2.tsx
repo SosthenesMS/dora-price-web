@@ -3,6 +3,8 @@
 import { useState } from "react"
 import { useRouter } from "next/navigation"
 import { Loader2 } from "lucide-react"
+import logo from "@/public/logo_final_03.png"
+import Image from "next/image"
 
 export function LoginScreen() {
   const [username, setUsername] = useState("")
@@ -48,6 +50,18 @@ export function LoginScreen() {
         onSubmit={handleLogin}
         className="w-full max-w-md rounded-lg bg-white p-8 shadow-md"
       >
+
+        {/* Container da logo */}
+        <div className="flex justify-center mb-4">
+          <Image
+            src={logo} // Caminho para sua imagem
+            alt="Logo Dora Price"
+            width={80} // Largura da imagem
+            height={80} // Altura da imagem
+            className="rounded-full" // Opcional: para imagem circular
+          />
+        </div>
+
         <div className="text-center mb-8">
           <h2 className="text-2xl font-bold text-gray-800">Dora Price</h2>
           <p className="text-sm text-gray-600 mt-2">Insira suas credenciais para continuar</p>
