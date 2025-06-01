@@ -51,7 +51,7 @@ export function Sidebar() {
 
       <div className="p-4 mt-auto">
         <div className="rounded-md bg-gray-800 p-3 mb-4">
-          <h3 className="text-sm font-medium text-yellow-400">DORA PRICE LTDA</h3>
+          <h3 className="text-sm font-medium text-yellow-400">DORA PRICE DEVELOPMENT LTDA</h3>
           <p className="mt-1 text-xs text-gray-300">
             Aplicação completa para coleta de preço de mercado e analises.
           </p>

@@ -32,9 +32,9 @@ export function UserProfile({ open, onOpenChange }: UserProfileProps) {
     bio: "Gestor comercial.",
     skills: ["Tomada de Decisão", "Coleta de Preço", "B2B", "B2C"],
     recentActivities: [
-      { id: 1, action: "Enviou documento", target: "Relatório de Contratações.pdf", time: "Hoje, 14:32" },
-      { id: 2, action: "Respondeu pergunta", target: "Processo de Férias", time: "Ontem, 09:15" },
-      { id: 3, action: "Compartilhou arquivo", target: "Planilha de Treinamentos.xlsx", time: "23/05/2023" },
+      { id: 1, action: "Enviou documento", target: "nf_pneu_6141.pdf", time: "Hoje, 14:32" },
+      { id: 2, action: "Cadastro de produto", target: "Pneu 175/65R14 enviado com sucesso!", time: "Ontem, 09:15" },
+      { id: 3, action: "Compartilhou arquivo", target: "sazonalidade_consolidada.xlsx", time: "02/06/2025" },
     ],
   })
 
