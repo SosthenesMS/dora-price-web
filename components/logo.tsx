@@ -123,7 +123,7 @@ export function Logo({ className, size = "2xl", showText = false }: LogoProps) {
             textSizeClasses[size],
           )}
         >
-          {/* Dora Price */}
+         Dora Price Backoffice
         </span>
       )}
     </div>

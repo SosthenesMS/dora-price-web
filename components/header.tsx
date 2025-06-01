@@ -249,7 +249,7 @@ export function Header({ onLogoClick }: { onLogoClick?: () => void }) {
         </div>
         <div className="flex items-center gap-2">
           <span className="hidden md:inline text-sm text-yellow-400">
-            Dora Price Backoffice
+            {/* Dora Price Backoffice */}
           </span>
 
           <ThemeToggle />
