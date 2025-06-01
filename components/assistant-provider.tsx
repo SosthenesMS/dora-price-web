@@ -44,7 +44,7 @@ export function AssistantProvider({ children }: { children: React.ReactNode }) {
       description: "Dashboard e analises de preços da Dora Price",
       icon: <ChartPie className="h-5 w-5" />,
       welcomeMessage:
-        "Olá! Sou o Assistente Geral da Bellatrix. Como posso ajudar a integrar os setores da Pneubras hoje?",
+        "Olá! Sou o Assistente Geral da Dora Price. Como posso ajudar a integrar os setores da Pneubras hoje?",
       suggestedQuestions: [
         "Como posso compartilhar informações entre setores?",
         "Quais são os principais objetivos da empresa este mês?",
@@ -58,7 +58,7 @@ export function AssistantProvider({ children }: { children: React.ReactNode }) {
       description: "Configuração e gestão de acessos do Dora Price",
       icon: <Lock className="h-5 w-5" />,
       welcomeMessage:
-        "Olá! Sou o Assistente de Administração da Bellatrix. Como posso ajudar com questões administrativas hoje?",
+        "Olá! Sou o Assistente de Administração da Dora Price. Como posso ajudar com questões administrativas hoje?",
       suggestedQuestions: [
         "Como solicitar material de escritório?",
         "Qual o procedimento para agendamento de salas?",
@@ -72,7 +72,7 @@ export function AssistantProvider({ children }: { children: React.ReactNode }) {
       description: "Relatórios e análises de desempenho e comparativos de preços",
       icon: <FileChartColumn className="h-5 w-5" />,
       welcomeMessage:
-        "Olá! Sou o Assistente de RH da Bellatrix. Como posso ajudar com questões de recursos humanos hoje?",
+        "Olá! Sou o Assistente de RH da Dora Price. Como posso ajudar com questões de recursos humanos hoje?",
       suggestedQuestions: [
         "Como solicitar férias?",
         "Quais são os benefícios oferecidos?",
@@ -86,7 +86,7 @@ export function AssistantProvider({ children }: { children: React.ReactNode }) {
       description: "Controle de notificações",
       icon: <Bell className="h-5 w-5" />,
       welcomeMessage:
-        "Olá! Sou o Assistente de Logística da Bellatrix. Como posso ajudar com questões de logística hoje?",
+        "Olá! Sou o Assistente de Logística da Dora Price. Como posso ajudar com questões de logística hoje?",
       suggestedQuestions: [
         "Como rastrear uma entrega?",
         "Qual o prazo para envio de produtos?",
@@ -99,7 +99,7 @@ export function AssistantProvider({ children }: { children: React.ReactNode }) {
       sector: "financeiro",
       description: "Coleta de preços por produto, marca, forne",
       icon: <CircleDollarSign className="h-5 w-5" />,
-      welcomeMessage: "Olá! Sou o Assistente Financeiro da Bellatrix. Como posso ajudar com questões financeiras hoje?",
+      welcomeMessage: "Olá! Sou o Assistente Financeiro da Dora Price. Como posso ajudar com questões financeiras hoje?",
       suggestedQuestions: [
         "Como enviar uma nota fiscal?",
         "Qual o procedimento para reembolso de despesas?",
@@ -112,7 +112,7 @@ export function AssistantProvider({ children }: { children: React.ReactNode }) {
       sector: "vendas",
       description: "Sincronização das bases de dados",
       icon: <RotateCw className="h-5 w-5" />,
-      welcomeMessage: "Olá! Sou o Assistente de Vendas da Bellatrix. Como posso ajudar com questões de vendas hoje?",
+      welcomeMessage: "Olá! Sou o Assistente de Vendas da Dora Price. Como posso ajudar com questões de vendas hoje?",
       suggestedQuestions: [
         "Quais são as metas de vendas deste mês?",
         "Como registrar uma nova venda no sistema?",
@@ -126,7 +126,7 @@ export function AssistantProvider({ children }: { children: React.ReactNode }) {
       description: "Painel de configurações gerais",
       icon: <Brain className="h-5 w-5" />,
       welcomeMessage:
-        "Olá! Sou o Assistente de Produção da Bellatrix. Como posso ajudar com questões de produção hoje?",
+        "Olá! Sou o Assistente de Produção da Dora Price. Como posso ajudar com questões de produção hoje?",
       suggestedQuestions: [
         "Qual o status da linha de produção atual?",
         "Como reportar um problema na linha de montagem?",

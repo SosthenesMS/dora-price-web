@@ -49,7 +49,7 @@ export function SettingsModal({ open, onOpenChange }: SettingsModalProps) {
       <DialogContent className="sm:max-w-[500px]">
         <DialogHeader>
           <DialogTitle className="text-xl font-bold">Configurações</DialogTitle>
-          <DialogDescription>Personalize sua experiência com o assistente Bellatrix.</DialogDescription>
+          <DialogDescription>Personalize sua experiência com o assistente Dora Price.</DialogDescription>
         </DialogHeader>
 
         <Tabs defaultValue="aparencia" className="mt-4">

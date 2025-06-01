@@ -37,7 +37,7 @@ export function Chat() {
   const [messages, setMessages] = useState<Message[]>([
     {
       id: "1",
-      content: "Olá! Eu sou Bellatrix, seu assistente de integração da Pneubras. Como posso ajudar você hoje?",
+      content: "Olá! Eu sou Dora Price, seu assistente de integração da Pneubras. Como posso ajudar você hoje?",
       role: "assistant",
       timestamp: new Date(),
     },
