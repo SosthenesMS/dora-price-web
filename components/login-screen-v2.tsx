@@ -3,7 +3,7 @@
 import { useState } from "react"
 import { useRouter } from "next/navigation"
 import { Loader2 } from "lucide-react"
-import logo from "@/public/logo_final_03.png"
+import logo from "@/public/logo_final_v2.png"
 import Image from "next/image"
 
 export function LoginScreen() {

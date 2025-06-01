@@ -2,7 +2,7 @@
 
 import Image from "next/image"
 import { cn } from "@/lib/utils"
-import logo from "@/public/logo_final_03.png"
+import logo from "@/public/logo_final_v2.png"
 
 interface LogoProps {
   className?: string
