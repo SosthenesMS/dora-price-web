@@ -1,0 +1,12 @@
+
+services:
+  nextjs:
+    image: node:18
+    working_dir: /app
+    volumes:
+      - .:/app
+    ports:
+      - '3000:3000'
+    environment:
+      - NODE_ENV=development
+    command: sh -c "npm install --legacy-peer-deps && npm run dev"
