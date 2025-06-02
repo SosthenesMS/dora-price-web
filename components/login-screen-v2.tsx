@@ -3,8 +3,9 @@
 import { useState } from "react"
 import { useRouter } from "next/navigation"
 import { Loader2 } from "lucide-react"
-import logo from "@/public/logo_final_v2.png"
+import logo from "@/public/logo_final.jpeg"
 import Image from "next/image"
+
 
 export function LoginScreen() {
   const [username, setUsername] = useState("")
