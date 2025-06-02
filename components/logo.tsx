@@ -41,7 +41,7 @@ export function Logo({ className, size = "lg", showText = false }: LogoProps) {
 
   return (
     <div className={cn("flex items-center gap-3", className)}>
-      <div className={cn("relative mt-2 h-10", sizeClasses[size])}>
+      <div className={cn("relative mt-2 h-20", sizeClasses[size])}>
         <Image
           src={logo}
           alt="Dora Logo"

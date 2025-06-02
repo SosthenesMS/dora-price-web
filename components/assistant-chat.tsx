@@ -4,6 +4,8 @@ import { useAssistant } from "@/components/assistant-provider"
 import { Button } from "@/components/ui/button"
 import { Card } from "@/components/ui/card"
 import dash from "@/public/dashboard_vendas_anual.png"
+import dash02 from "@/public/pneu_6141.png"
+import dash03 from "@/public/sazonalidade.png"
 import { ScrollArea } from "@/components/ui/scroll-area"
 import { Input } from "@/components/ui/input"
 import { AssistantSelector } from "./assistant-selector"
@@ -20,6 +22,7 @@ import { Tabs, TabsList, TabsTrigger, TabsContent } from "@/components/ui/tabs"
 import { Label } from "@/components/ui/label"
 import { Textarea } from "@/components/ui/textarea"
 import { Checkbox } from "@/components/ui/checkbox"
+
 
 export function AssistantChat() {
   const { activeAssistant } = useAssistant()
@@ -84,18 +87,22 @@ function DashboardContent() {
       <div className="bg-white p-6 rounded-lg shadow">
         <h2 className="text-xl font-semibold mb-4">Ações Rápidas</h2>
         <div className="space-y-3">
-          <Button variant="outline" className="w-full justify-start">
-            <FileText className="mr-2 h-4 w-4" />
-            Histórico de Preço
-          </Button>
+          <a href="/tabela_precos.pdf" download="historico_precos.pdf">
+            <Button variant="outline" className="w-full justify-start">
+              <FileText className="mr-2 h-4 w-4" />
+              Histórico de Preço
+            </Button>
+          </a>
           <Button variant="outline" className="w-full justify-start">
             <HelpCircle className="mr-2 h-4 w-4" />
             Configurar alertas de sazonalidade
           </Button>
-          <Button variant="outline" className="w-full justify-start">
-            <Download className="mr-2 h-4 w-4" />
-            Exportar Dados
-          </Button>
+          <a href="/relatorio_curva_abc_x_margem_dora_price_reports.pdf" download="rel_sazonalidade.pdf">
+            <Button variant="outline" className="w-full justify-start">
+              <Download className="mr-2 h-4 w-4" />
+              Exportar Dados
+            </Button>
+          </a>
         </div>
       </div>
     </div>
@@ -161,9 +168,9 @@ function ReportsContent() {
               <SelectValue placeholder="Selecione o tipo de relatório" />
             </SelectTrigger>
             <SelectContent>
-              <SelectItem value="performance">Desempenho</SelectItem>
-              <SelectItem value="feedback">Feedbacks</SelectItem>
-              <SelectItem value="financial">Financeiro</SelectItem>
+              <SelectItem value="performance">Por Preço</SelectItem>
+              <SelectItem value="feedback">Por Concorrente</SelectItem>
+              <SelectItem value="financial">Por Fornecedor</SelectItem>
             </SelectContent>
           </Select>
           
@@ -177,31 +184,46 @@ function ReportsContent() {
               <SelectItem value="quarter">Último trimestre</SelectItem>
             </SelectContent>
           </Select>
-          
-          <Button className="w-full">
-            <FileOutput className="mr-2 h-4 w-4" />
-            Gerar Relatório
-          </Button>
+          <a href="/P2_FALKEN_205_70R15C.pdf" download="P2_FALKEN_205_70R15C.pdf">
+            <Button className="w-full">
+              <FileOutput className="mr-2 h-4 w-4" />
+              Gerar Relatório
+            </Button>
+          </a>
         </div>
         
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
           <div className="h-80 bg-gray-100 rounded-lg flex items-center justify-center">
-            <p className="text-gray-500">Gráfico de desempenho</p>
+            {/* <p className="text-gray-500">Gráfico de desempenho</p> */}
+            <img
+              src={dash03.src}
+              alt="Gráfico de análise de feedbacks"
+              className="w-full h-full object-contain"
+            />
           </div>
+
+
           <div className="h-80 bg-gray-100 rounded-lg flex items-center justify-center">
-            <p className="text-gray-500">Métricas chave</p>
+            {/* <p className="text-gray-500">Métricas chave</p> */}
+            <img
+              src={dash02.src}
+              alt="Gráfico de análise de feedbacks"
+              className="w-full h-full object-contain"
+            />
           </div>
         </div>
         
         <div className="mt-6">
-          <Button variant="outline" className="mr-3">
-            <Download className="mr-2 h-4 w-4" />
-            Exportar PDF
-          </Button>
-          <Button variant="outline">
-            <Share2 className="mr-2 h-4 w-4" />
-            Compartilhar
-          </Button>
+          <a href="/P1_DUNLOP_175_65R14.pdf" download="P1_DUNLOP_175_65R14.pdf">
+            <Button variant="outline" className="mr-3">
+              <Download className="mr-2 h-4 w-4" />
+              Exportar PDF
+            </Button>
+            <Button variant="outline">
+              <Share2 className="mr-2 h-4 w-4" />
+              Compartilhar
+            </Button>
+          </a>
         </div>
       </div>
     </div>

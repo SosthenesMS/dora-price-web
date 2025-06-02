@@ -53,7 +53,7 @@ export function Header({ onLogoClick }: { onLogoClick?: () => void }) {
 
           <div className="flex items-center gap-2 cursor-pointer" onClick={handleLogoClick}>
             <motion.div initial={{ opacity: 0, x: -20 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.5 }}>
-              <Logo size="md" showText />
+              <Logo size="sm" showText />
             </motion.div>
           </div>
         </div>
